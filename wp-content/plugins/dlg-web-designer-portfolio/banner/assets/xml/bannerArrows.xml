@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	<item name="left_out" url="assets/banner_arrows_assets/left_out.png"/>
+	<item name="left_over" url="assets/banner_arrows_assets/left_over.png"/>
+	<item name="left_press" url="assets/banner_arrows_assets/left_press.png"/>
+	
+	<item name="right_out" url="assets/banner_arrows_assets/right_out.png"/>
+	<item name="right_over" url="assets/banner_arrows_assets/right_over.png"/>
+	<item name="right_press" url="assets/banner_arrows_assets/right_press.png"/>
+</data>

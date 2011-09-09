@@ -1,0 +1,72 @@
+/* CSS Document */
+.nm_help
+{
+	font-size:10px;
+	font-style:italic;
+}
+
+
+/* ============= Email subscriptbox ============== */
+#email-subscription-box {
+	width: 200px;
+	height: auto;
+	background-image: url(emailbox-back.jpg);
+	background-repeat: no-repeat;
+	padding: 15px;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+#email-subscription-box h1 {
+	font-family: Verdana, Geneva, sans-serif;
+	color: #FFF;
+	padding: 0px;
+	margin: 0px;
+	padding-bottom: 7px;
+	border-bottom: 1px dotted #e6e6e6;
+	font-size: 15px;
+	margin-top: 5px;
+	font-weight:bold;
+}
+#email-subscription-box p {
+	margin: 0px;
+	padding: 0px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #FFF;
+	margin-top: 6px;
+	line-height:11px;
+}
+#email-subscription-box .field_email {
+	width: 140px;
+	background: none;
+	height: 21px;
+	line-height: 21px;
+	background-color: #fff;
+	border: 1px solid #0d2c52;
+	color: #000;
+	margin-top: 5px;
+}
+
+#email-subscription-box .field_names {
+	width: 95px;
+	background: none;
+	height: 21px;
+	background-color: #fff;
+	border: 1px solid #0d2c52;
+	color: #000;
+	float:left;
+}
+#email-subscription-box .btn_email {
+	width: 39px;
+	background: none;
+	height: 23px;
+	border: none;
+	line-height: 20px;
+	background-image: url(btn-email.jpg);
+	background-repeat: no-repeat;
+	color: #FFF;
+	margin-top: 10px;
+	margin-left: 10px;
+	cursor: pointer;
+}

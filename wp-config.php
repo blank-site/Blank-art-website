@@ -22,7 +22,7 @@ define('DB_NAME', 'blank');
 define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'sonata');
+define('DB_PASSWORD', '');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
@@ -42,14 +42,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'U&[$bH2 `b^8C}U;`d~d44d7^s|7t=SfKjOOQZN]H&J-a<(/$@99t]oK?Qb|3ayk');
-define('SECURE_AUTH_KEY',  '-kz6lLo|F_dW&P]wUU:A$e}:a954,EW7ob]X#:JHXY.xd,(?[HgS5ZPT$J9=b3D{');
-define('LOGGED_IN_KEY',    '*GjL[|JjuU?w67WjWwj!0[%A+{V`!K`p3c10.F`?)i}A!#VexN;g+DjK,hkMG}H>');
-define('NONCE_KEY',        '.zQ%u!Sed3CASNwpK,z%j_-k L p{-+(nGnbUL~$h?s#;>/8^h0:-D{Uq/P?*oG_');
-define('AUTH_SALT',        'N1?oF3`5}M }rN(l0*Fxnln&c!#oD-OE:~tHq!Y`@Zn%F5u_+0O5WC>Sy@ZA6+k[');
-define('SECURE_AUTH_SALT', 'rK[!]a3~`Iz&*TqA4X;t1V,gve!8(kE<O}f(${Ry9/`&QD~4gbs*.c78%$+.3X^]');
-define('LOGGED_IN_SALT',   '#Ke}S_r_7+`3_sptDje@6PH5_e.,x<4q-p[X8Mk>I}BHBu|P|7LQ`olB!B{gvJC5');
-define('NONCE_SALT',       '/7ML/zs<UUHE^Up4:ju2j{5U`Pj!{}Wy2TBFE`8d/y?^C;D^L<DkTG:4IJ^?9Uih');
+define('AUTH_KEY',         'd^h|Tw W]$c{j+c<1]HP;SA|%)DoqM+)Fu#YtDWiJVVZw(3cwV<1{)m-+7_pMxg+');
+define('SECURE_AUTH_KEY',  '+[gP2zFMvM0-6q^Y@$wS31N_I<,omvU-zELGqGHcB[K;`2F!;$pnL_@c$x6iy9$+');
+define('LOGGED_IN_KEY',    'Kn^WrhGu+gvRp+TA7F8UY|+yy+a[z8?_(j#DA)e>A&e+Caso~FrDS/rC0k*;z Zy');
+define('NONCE_KEY',        '7d/?LF5+FR8ZOK,g+=jE>IfZbaSb|V+%S0T0@rm]57iL,-2o?+aDnQ_*OpI_5/m,');
+define('AUTH_SALT',        'C8I4e1By@|WO~(T(|y8)b!sK$Wj,A|z9q+bttSsinnnj.P:iD+/+k(c5Db tdi=T');
+define('SECURE_AUTH_SALT', 'LAU-,@w_Et-e*!#tnv.~+g#uf#=#O]3C58St b8@+<ok{!R0tKlC(+:%L?g2Bf63');
+define('LOGGED_IN_SALT',   'ibVU<~{gReQ~^#|I-bZa~kH`QyY@XwIQkn=bX4V,x(Fwui{O0ccpud%l <RGXiEZ');
+define('NONCE_SALT',       'v}9er:/-y9Ar`d|//<EHZ*#kex4Kcfd4FBGX +hrcX xQoOtqqa74^TSZ3*8sfYk');
 
 /**#@-*/
 
@@ -59,7 +59,7 @@ define('NONCE_SALT',       '/7ML/zs<UUHE^Up4:ju2j{5U`Pj!{}Wy2TBFE`8d/y?^C;D^L<Dk
  * You can have multiple installations in one database if you give each a unique
  * prefix. Only numbers, letters, and underscores please!
  */
-$table_prefix  = 'wp_';
+$table_prefix  = 'wp_blank_';
 
 /**
  * WordPress Localized Language, defaults to English.
