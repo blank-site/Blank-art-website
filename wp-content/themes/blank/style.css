@@ -2684,10 +2684,10 @@ p.comment-form-comment {
 #header .logo a:link {display:block; background:url(images/blank-logo-mask.png) no-repeat left top; max-height:66px; max-width:255px; height:66px;;border-bottom:none; }
 
 
-#header ul {float:left;z-index:10; position:absolute; padding-left:327px;}
-#header ul li{float:left; display:inline-block; list-style:none; width:174px; height:92px; font-family:Helvetica, Arial, Helvetica, sans-serif; font-size:12px; color:#7F7F7F;  }
+#header ul {float:left;z-index:10; position:absolute; padding-left:240px;   }
+#header ul li{float:left; display:inline-block; list-style:none; width:174px; height:92px; font-family:Helvetica, Arial, Helvetica, sans-serif; font-size:12px; color:#7F7F7F;   }
 
-#header ul a:link{color:#FF0078; text-decoration:none;color:#FF0078; display:table-cell;width:87px; height:93px; vertical-align:bottom;border-bottom:1px #000 solid;}
+#header ul a:link{color:#FF0078; text-decoration:none;color:#FF0078; display:table-cell;width:87px; height:93px; vertical-align:bottom;border-bottom:1px #000 solid; float:right ; }
 #header ul a:hover{color:#FF0078; background:#ffdfff;border-bottom:1px #000 solid;}
 #header ul a:visited{color:#FF0078;border-bottom:1px #000 solid;}
 

@@ -19,12 +19,13 @@
     <div class="right_block"></div>
     <div class="line_bg"></div>
     <div class="logo"><a href="<? bloginfo('home')?>"></a></div>
-    <ul role="navigation">
+    <!--ul role="navigation">
         <li><a href="about.php">About</a></li>
         <li><a href="work.php">Work</a></li>
         <li><a href="blog.php">Blog</a></li>
         <li class="nav"><a href="contacts.php">Contact</a></li>
-    </ul>
+    </ul-->
+    <?php wp_nav_menu(array('link_before'=>'<div style="width:70xp;height:70px;"></div>'));?>
     <div class="clear"></div>
 </div>
 
