@@ -1,0 +1,236 @@
+.wrap{
+	max-width: 940px;
+}
+
+#post-body{
+	padding: 24px 0 0;
+	border: 0 none;
+}
+
+.inner-sidebar{
+	display: block;
+	float: left;
+}
+
+.empty-message{
+	text-align: center;
+	padding: 80px 50px;
+}
+.empty-message p{
+	font-family: Georgia, "Times New Roman", "Bitstream Charter", Times, serif;
+	font-size: 18px;
+	font-style: italic;
+	color: #888;
+}
+
+/* *******************************************
+				Add New Item
+******************************************* */
+.postbox .inside{
+	padding: 0;
+}
+
+.postbox .posttypediv{
+	padding: 0 10px;
+}
+
+.postbox p{
+	padding: 0 10px;
+	display: block;
+	overflow: hidden;
+}
+
+.postbox p.sh_sb-border-bottom{
+	overflow: visible;
+}
+
+.howto .sh_sb-clearfix{
+	display: block;
+	clear: both;
+	float: none;
+	height: 1px;
+}
+
+.postbox input[type="text"].error-field{
+	border: 1px solid red;
+}
+
+.postbox label{
+	display: block;
+	margin-bottom: 2px;
+}
+
+.howto .required{
+	color: #bd0000;
+	float: none;
+	margin: 0;
+	display: inline;
+}
+
+#sh_sb_icon_new{
+	float: left;
+	width: 150px;
+	margin-left: 35px;
+	
+	-webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	transition: all 500ms ease;
+}
+
+.blue-glow{
+	-webkit-box-shadow: 0 0 15px rgba(0, 148, 242, 0.85);
+	-moz-box-shadow: 0 0 15px rgba(0, 148, 242, 0.85);
+	box-shadow: 0 0 15px rgba(0, 148, 242, 0.85);
+}
+
+.upload-field a{
+	float: right;
+	margin-top: 4px;
+}
+
+.sh_sb-border-bottom, .postbox p.sh_sb-border-bottom, tbody td, th{
+	border-bottom: 1px solid #DFDFDF;
+	-webkit-box-shadow: 0 1px 0 #fff;
+	-moz-box-shadow: 0 1px 0 #fff;
+	box-shadow: 0 1px 0 #fff;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
+.ui-state-active{
+	background-color: white;
+	border-color: #DFDFDF;
+	border-style: solid solid none;
+	border-width: 1px 1px 0;
+}
+
+.posttypediv div.tabs-panel{
+	height: auto;
+}
+
+/* *******************************************
+				Listing Table
+******************************************* */
+table{
+	max-width: 700px;
+	width: 100%;
+	position: relative;
+}
+
+table.empty-table{
+	width: 100%;
+}
+
+td, th{
+	padding: 8px;
+}
+.ui-sortable-helper td{
+	background: rgba(255, 255, 255, 0.5);
+}
+
+th{
+	padding-top: 13px;
+	text-align: left;
+	min-width: 100px;
+}
+
+.postbox table input[type="text"]{
+	width: 100%;
+	padding: 5px;
+}
+
+.icon-col{
+	width: 185px;
+}
+
+th.icon-col{
+	padding-left: 43px;
+	width: 142px;
+}
+
+.postbox table .icon-col input{
+	width: 148px;
+}
+
+.actions-col{
+	min-width: 0;
+	width: 45px;
+	padding-right: 15px;
+}
+
+.sh_sb-move{
+	margin-right: 5px;
+	cursor: move;
+}
+
+.sh_sb-move, .sh_sb-delete{
+	display: inline-block;
+	padding: 3px;
+}
+
+.sh_sb-delete{
+	opacity: 0.4;
+	-webkit-transition: opacity 200ms ease;
+	-moz-transition: opacity 200ms ease;
+	transition: opacity 200ms ease;
+}
+
+.sh_sb-delete:hover{
+	opacity: 1;
+}
+
+.postbox tfoot label{
+	display: inline;
+	font-size: 11px;
+}
+
+.postbox tfoot input[type="submit"]{
+	padding-left: 30px;
+	padding-right: 30px;
+	float: right;
+}
+
+/* *******************************************
+				Icon Previews
+******************************************* */
+.icon-preview{
+	background: rgba( 0, 0, 0, 0.05 );
+	width: 16px;
+	height: 16px;
+	padding: 5px;
+	margin-right: 5px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	line-height: 0.75;
+	text-align: center;
+	float: left;
+	
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+.icon-preview img{
+	max-width: 16px;
+	max-height: 16px;
+}
+
+li.icon-preview{
+	margin: 3px 6px 3px 0;
+	cursor: pointer;
+}
+li.icon-preview:nth-child(7n){
+	margin-right: 0;
+}
+
+li.icon-preview:hover{
+	background: rgba( 0, 0, 0, 0.15 );
+}
+
+li.icon-preview:active{
+	background: rgba( 0, 0, 0, 0.25 );
+}
+
+
+/*
+modified by liuyi, used for blank theme.
+*/
+

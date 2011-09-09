@@ -15,12 +15,18 @@
  */
 
 // Enqueue showcase script for the slider
-wp_enqueue_script( 'twentyeleven-postlist', get_template_directory_uri() . '/js/showcase.js', array( 'jquery' ), '2011-04-28' );
+
 get_header(); ?>
 <?php get_template_part('top','location')?>
+<div class='left-sidebar'>
+<?php get_sidebar('social'); ?>
+</div>
 <div id="primary" class="showcase">
-<?php get_post() ?>
+<?php if (have_posts()) : ?>
+	<?php while (have_posts()) : the_post(); ?>
+	<?php require('content.php'); ?>
+<?php endwhile;endif ;?>
     
 </div><!-- #primary -->
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>
