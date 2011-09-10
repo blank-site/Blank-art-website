@@ -1,0 +1,22 @@
+
+
+#tagadder{
+    width: 300px;
+}
+
+#tagadder p{
+    font-size: 0.8em;
+    margin: 1px;
+}
+#tagadder #tagAdderError{
+    background: #f3ddaf;
+    display: none;
+    margin: 0;
+    padding: 0 0 0 10px;
+}
+#tagadder #tagAdderAdded{
+    background: #8be38b;
+    display: none;
+    margin:0;
+    padding: 0 0 0 10px;
+}

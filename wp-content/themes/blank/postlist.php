@@ -18,9 +18,14 @@
 
 get_header(); ?>
 <?php get_template_part('top','location')?>
-<div class='left-sidebar'>
+<div class='left-sidebar '>
 <?php get_sidebar('social'); ?>
+<div class="side-spacing"></div>
+<?php get_sidebar('tags'); ?>
+<div class="side-spacing"></div>
+<?php get_sidebar('archives'); ?>
 </div>
+
 <div id="primary" class="showcase">
 <?php if (have_posts()) : ?>
 	<?php while (have_posts()) : the_post(); ?>
@@ -28,5 +33,5 @@ get_header(); ?>
 <?php endwhile;endif ;?>
     
 </div><!-- #primary -->
-
+<div class='clear'></div>
 <?php get_footer(); ?>

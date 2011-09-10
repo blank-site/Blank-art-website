@@ -2704,15 +2704,22 @@ p.comment-form-comment {
 	width:258px;
 	padding-left:15px;
 	padding-right:15px;
+	
 }
 
-.widget-block{ float:left;background:#fff;clear:both; float:left; height:auto; width:220px; padding-bottom:15px;}
+.widget-block{ float:left;background:#fff;clear:both; float:left; height:auto; width:220px; padding-bottom:15px; border-bottom:#e6e6e6 1px solid;}
+ li{ list-style:none;}
 .widget-block-topline{ height:5px; background:#e6e6e6;}
 .sidebar-social{}
 .widget-title{text-transform:none; height:40px;font-family:Helvetica, Arial, Helvetica, sans-serif;font-size:12px; }
 .widget-wrap{ padding-left:14px; padding-top:5px; float:left;}
 
 .social-spacing{ height:20px;}
+.side-spacing{ height:30px; width:220px;  float:left;}
+.widget-block a:link{color:#666666; }
+.widget-block a:visited{color:#666666; }
+.widget-block a:hover{color:#FF0078;}
+
 
 
 

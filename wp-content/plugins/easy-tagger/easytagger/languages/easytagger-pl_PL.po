@@ -1,0 +1,322 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-09-04 16:15+0100\n"
+"PO-Revision-Date: 2011-09-04 16:16+0100\n"
+"Last-Translator: Dominik Gawlik <dominik.gawlik1@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
+"X-Poedit-Basepath: C:\\xampp\\htdocs\\wordpress\\wp-content\\plugins\\easytagger\n"
+"X-Poedit-Language: Polish\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: inc/misc.php:13
+#, php-format
+msgid "%d hours ago"
+msgstr "%d godzin temu"
+
+#: inc/misc.php:15
+msgid "hour ago"
+msgstr "godzinę temu"
+
+#: inc/misc.php:17
+#, php-format
+msgid "%d minutes ago"
+msgstr "%d minut temu"
+
+#: inc/misc.php:19
+msgid "minute ago"
+msgstr "minutę temu"
+
+#: inc/misc.php:21
+#, php-format
+msgid "%d seconds ago"
+msgstr "%d sekund temu"
+
+#: inc/misc.php:32
+msgid "Easy Tagger configuration"
+msgstr "Konfiguracja wtyczki Easy Tagger"
+
+#: inc/misc.php:36
+msgid "Users administration"
+msgstr "Administracja Użytkownikami"
+
+#: inc/misc.php:37
+msgid "In this section you can prevent malicious users from tagging. Simply pick  one users from first list on the left, and enter expiration date and reason (both are required). Notice bans are automatically removed by this plugin after expiration. Reload page to see how lists changed."
+msgstr "W tym dziale możesz zabronić wybranym użytkownikom tagowania. Po prostu wybierz któregoś z listy po lewej, wpisz powód bana i datę wygaśnięcia (obydwa pola są wymagane). Ban jest automatycznie kasowany z bazy danych po wygaśnięciu. Przeładuj stronę żeby odświeżyć listy."
+
+#: inc/misc.php:43
+msgid "Blog users"
+msgstr "Użytkownicy bloga"
+
+#: inc/misc.php:54
+#: inc/misc.php:105
+msgid "User"
+msgstr "Użytkownik"
+
+#: inc/misc.php:55
+msgid "Status"
+msgstr "Status"
+
+#: inc/misc.php:56
+msgid "Email"
+msgstr "Email"
+
+#: inc/misc.php:81
+msgid "Expires (Y-m-d H:i:s):"
+msgstr "Wygasa (Y-m-d H:i:s):"
+
+#: inc/misc.php:83
+msgid "Reason:"
+msgstr "Powód:"
+
+#: inc/misc.php:85
+msgid "Give Ban"
+msgstr "Daj Bana"
+
+#: inc/misc.php:93
+msgid "Users banned from tagging"
+msgstr "Zbanowani użytkownicy"
+
+#: inc/misc.php:104
+msgid "ID"
+msgstr "ID"
+
+#: inc/misc.php:106
+msgid "Reason"
+msgstr "Powód"
+
+#: inc/misc.php:107
+msgid "Ban Date(GMT+O)"
+msgstr "Data Bana(GMT +O)"
+
+#: inc/misc.php:108
+msgid "Expires"
+msgstr "Wygasa"
+
+#: inc/misc.php:136
+msgid "Remove Ban"
+msgstr "Zdejmij Bana"
+
+#: inc/misc.php:142
+msgid "Tag Search Redirection"
+msgstr "Przekierowanie z widgetu 'Tag Search'"
+
+#: inc/misc.php:143
+msgid "One of Easy Tagger widgets 'Tag Search' allows to search posts based on assigned tags. Redirection defaults to wordpress search loop, you can also redirect to custom page containing Easy Tagger`s another widget 'Featured Images Grid'. If so, copy permalink to text field below."
+msgstr "Jeden z dostępnych widgetów 'Tag Search' pozwala na wyszukiwanie postów na podstawie przypisanych im tagów. Domyślnie przekierowanie nastąpi do standardowej 'pętli' Wordpress ('Wordpress Loop') z wynikami wyszukiwania, jeśli ustawiono wcześniej stronę z innym widgetem 'Featured Images Grid' można także tam. W takim przypadku należy wkleić do paska pod spodem permalink`a tej strony."
+
+#: inc/misc.php:148
+msgid "Wordpress Search Loop"
+msgstr "Wordpress Search Loop"
+
+#: inc/misc.php:149
+msgid "Custom Page Show All Posts"
+msgstr "Własna strona | Wszystkie Posty"
+
+#: inc/misc.php:150
+msgid "Custom Page Show Posts with given tag"
+msgstr "Własna strona | Posty oznaczone szukanym tagiem"
+
+#: inc/misc.php:152
+#: inc/misc.php:169
+msgid "Save Changes"
+msgstr "Zapisz Zamiany"
+
+#: inc/misc.php:153
+msgid "Redirect to:"
+msgstr "Przekieruj do:"
+
+#: inc/misc.php:156
+msgid "Featured Images Grid Options"
+msgstr "Mozaika z ' Post Featured Images'"
+
+#: inc/misc.php:157
+msgid "This widget displays in grid featured images of posts, which are links, also. You can display this widget on 3 different ways: 1)drag widget on the sidebar 2)insert shortcode [etgrid] when publishing post/page 3)add template tag <?php et_images_grid()?> to your custom template. Here you can set options how to render this grid."
+msgstr "Ten widget wyświetla mozaike zdjęć przypisanych do postów, zdjęcia te są także linkami do odp. postów. Można go wyświtlić na 3 sposoby: 1)przeciągnięcie go do paska bocznego 2)za pomocą mechanizmu wordpressa -  shortcode: [etgrid] podczas publikowania posta/strony 3)dodanie wstawki <?php et_images_grid()?> wewnątrz szablonu"
+
+#: inc/misc.php:161
+msgid "ET Featured Images Grid Image Width:"
+msgstr "Szerokość pojedyńczego zdjęcia:"
+
+#: inc/misc.php:163
+msgid "ET Featured Images Grid Image Height:"
+msgstr "Wysokość pojedyńczego zdjęcia:"
+
+#: inc/misc.php:165
+msgid "ET Featured Images Grid Rows:"
+msgstr "Liczba rzędów:"
+
+#: inc/misc.php:167
+msgid "ET Featured Images Grid Columns:"
+msgstr "Liczba kolumn:"
+
+#: inc/misc.php:181
+msgid "Success"
+msgstr "Sukces"
+
+#: inc/misc.php:182
+msgid "No ban expiration date!"
+msgstr "Brak daty wygaśnięcia"
+
+#: inc/misc.php:183
+msgid "No ban reason given!"
+msgstr "Brak powodu bana!"
+
+#: inc/misc.php:184
+msgid "Wrong expire date format"
+msgstr "Zły format daty!"
+
+#: widgets/tagadder.php:11
+msgid "Invalid input: tags must be one-word terms"
+msgstr "tagi muszą być pojedyńczymi wyrazami"
+
+#: widgets/tagadder.php:12
+msgid "Tags"
+msgstr "Tagi"
+
+#: widgets/tagadder.php:13
+msgid "successfully added"
+msgstr "dodane z powodzeniem"
+
+#: widgets/tagadder.php:25
+#: widgets/tagadder.php:103
+msgid "Please enter tags separated by commas"
+msgstr "Dodaj tagi oddzielone przecinkami"
+
+#: widgets/tagadder.php:26
+#: widgets/tagadder.php:104
+msgid "Add"
+msgstr "Dodaj"
+
+#: widgets/tagadder.php:38
+msgid "Stimulus label:"
+msgstr "Napis przycisku:"
+
+#: widgets/tagadder.php:39
+msgid "Button text:"
+msgstr "Tekst przycisku"
+
+#: widgets/tagadder.php:40
+msgid "Input size:"
+msgstr "Szerokość pola:"
+
+#: widgets/tagadder.php:59
+msgid "You must login to add tags"
+msgstr "Aby dodawać tagi musisz się zalogować"
+
+#: widgets/tagadder.php:63
+msgid "Sorry you are banned from tagging"
+msgstr "Zostałeś zbanowany, skontaktuj się z administratorem"
+
+#: widgets/tagdisplay.php:24
+msgid "Show all: "
+msgstr "Pokaż wszystkie:"
+
+#: widgets/tagdisplay.php:31
+msgid "Caption under which to display tags:"
+msgstr "Pod jakim tytułem wyświetlać tagi:"
+
+#: widgets/tagdisplay.php:54
+msgid "This widget works only with posts"
+msgstr "Ten widget działa tylko dla postów:"
+
+#: widgets/tagmostactive.php:30
+msgid "How many top users to display:"
+msgstr "Ile najaktywniejszych wyświetlić:"
+
+#: widgets/tagmostactive.php:37
+#: widgets/tagpopular.php:37
+#: widgets/tagrecent.php:37
+msgid "Caption for the list:"
+msgstr "Tytuł listy:"
+
+#: widgets/tagmostactive.php:44
+#: widgets/tagpopular.php:44
+#: widgets/tagrecent.php:44
+msgid "Since hours ago:"
+msgstr "Z ostatnich x godzin:"
+
+#: widgets/tagmostactive.php:51
+#: widgets/tagpopular.php:51
+#: widgets/tagrecent.php:51
+msgid "+ minutes ago:"
+msgstr "+ minut wstecz"
+
+#: widgets/tagmostactive.php:90
+msgid "No recent active taggers"
+msgstr "Brak aktywnych tagujących"
+
+#: widgets/tagmostactive.php:97
+msgid "added"
+msgstr "dodał(a)"
+
+#: widgets/tagmostactive.php:101
+msgid "tags"
+msgstr "tagi"
+
+#: widgets/tagpopular.php:30
+msgid "How many popular tags to display:"
+msgstr "Ile najpopularniejszych wyświetlić:"
+
+#: widgets/tagpopular.php:90
+#: widgets/tagrecent.php:90
+msgid "No recent tags"
+msgstr "Brak ostatnich tagów"
+
+#: widgets/tagpopular.php:97
+msgid "tagged by"
+msgstr "dodany przez"
+
+#: widgets/tagpopular.php:100
+msgid "users"
+msgstr "osoby"
+
+#: widgets/tagpopular.php:102
+msgid "user"
+msgstr "osobę"
+
+#: widgets/tagrecent.php:30
+msgid "How many recent tags to display:"
+msgstr "Ile najnowszych wyświetlić:"
+
+#: widgets/tagrecent.php:97
+msgid "has added tag"
+msgstr "dodał tag"
+
+#: widgets/tagrecent.php:99
+msgid "to"
+msgstr "do"
+
+#: widgets/tagsearch.php:19
+msgid "Search"
+msgstr "Wyszukaj"
+
+#: widgets/tagsearch.php:21
+msgid "Search by tags"
+msgstr "Wyszukaj po tagach"
+
+#: widgets/tagsearch.php:32
+msgid "Search button text"
+msgstr "Tekst przycisku wyszukiwania"
+
+#: widgets/tagsearch.php:33
+msgid "Search input width"
+msgstr "Rozmiar pola wyszukiwania"
+
+#: widgets/tagsearch.php:34
+msgid "Search title"
+msgstr "Tytuł wyszukiwania"
+
+#, fuzzy
+#~ msgid "tag"
+#~ msgstr "tagów"
+
+#, fuzzy
+#~ msgid "Caption for the list"
+#~ msgstr "Tytuł listy:"

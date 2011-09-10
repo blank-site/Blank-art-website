@@ -1,0 +1,98 @@
+
+
+#loadingOverlay{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    
+    opacity: 0.7;
+    z-index: 99;
+    background-color: #000;
+}
+#loadingWrapper{
+   position:absolute;
+   top:0;
+   left:0;
+   width: 100%;
+   height: 100%; 
+   padding-top: 0;
+   display: none;
+}
+
+#loadingContent{
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 999;
+    position: relative;
+    display: block;
+    width: 100px;
+    text-align: center;
+    top: 40%;
+    color: #fff;
+    font-family: verdana;
+    font-size: 1.4em;
+    width: 100%;
+    
+}
+
+
+#gridWrapper{
+   position: relative; 
+   width: 600px;
+   height: 600px;
+}
+#gridDisplay{
+    float: left;
+    width:auto;
+    position: relative;
+}
+
+#rightControl{
+    float: left;
+    opacity: 0.7;
+}
+
+#leftControl{
+    float: left;
+    opacity: 0.7;
+}
+
+
+#imageContainer{
+    float: left;
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+    color: #000;
+    text-decoration:none;
+}
+
+#imageTextLayer{
+    background: #fff;
+    opacity: 0.7;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    height: 25%;
+}
+
+#imageText{
+    text-align: center;
+    font-family: calibri;
+    font-weight: 500;
+    cursor: default;
+}
+
+#infoArea{
+    clear:both;
+    
+}
+#infoArea p{
+    text-align: center;
+    font-size: .9em;
+    font-weight: 600;
+    font-family: verdana,serif;
+}
+
