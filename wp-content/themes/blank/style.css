@@ -313,7 +313,7 @@ body {
 ----------------------------------------------- */
 
 body, input, textarea {
-	color: #373737;
+	color: #666;
 	font: 15px "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: 300;
 	line-height: 1.625;
@@ -457,13 +457,15 @@ input[type=text] {
 	padding: 3px;
 }
 input#s {
-	background: url(images/search.png) no-repeat 5px 6px;
-	-moz-border-radius: 2px;
-	border-radius: 2px;
-	font-size: 14px;
+	
+	
+	font-size: 18px;
 	height: 22px;
 	line-height: 1.2em;
-	padding: 4px 10px 4px 28px;
+	background:none;
+	border:none;
+	box-shadow:none;
+	float:left;
 }
 input#searchsubmit {
 	display: none;
@@ -1763,15 +1765,15 @@ section.recent-posts .other-recent-posts li:after {
 	margin: 0 0 1.625em;
 }
 .widget_search #s {
-	width: 77%;
+	width:auto;
 }
 .widget_search #searchsubmit {
-	background: #ddd;
-	border: 1px solid #ccc;
+	
+	
 	-webkit-box-shadow: inset 0px -1px 1px rgba(0, 0, 0, 0.09);
 	-moz-box-shadow: inset 0px -1px 1px rgba(0, 0, 0, 0.09);
 	box-shadow: inset 0px -1px 1px rgba(0, 0, 0, 0.09);
-	color: #888;
+	color: #666;
 	font-size: 13px;
 	line-height: 25px;
 	position: relative;
@@ -2720,6 +2722,14 @@ p.comment-form-comment {
 .widget-block a:visited{color:#666666; }
 .widget-block a:hover{color:#FF0078;}
 
+
+.widget-block #searchform{ font-size:18px; color:#666666; width:190px;}
+.widget-block #searchform #searchsubmit { background:url(images/buttons/blank_search_btn.gif) no-repeat top right; width:37px; height:37px; max-height:37px; max-width:37px; display:block;float:left; box-shadow:none; overflow:hidden; cursor:pointer; outline: medium none;border: 0 none;}
+.widget-block #searchform #s{ float:left; width:145px; }
+
+a.purple:link{color:#FF0078}
+a.purple:visited{color:#FF0078}
+a.purple:hover{color:#666666}
 
 
 
