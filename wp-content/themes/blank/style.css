@@ -82,17 +82,16 @@ body {
 }
 #primary {
 	float: left;
-	margin: 0 -26.4% 0 0;
-	width: 100%;
+
+	width: 695px;
 }
 #content {
-	margin: 0 34% 0 7.6%;
-	width: 58.4%;
+	
 }
 #secondary {
 	float: right;
 	margin-right: 7.6%;
-	width: 18.8%;
+	width: auto;
 }
 
 /* Singular */
@@ -314,7 +313,8 @@ body {
 
 body, input, textarea {
 	color: #666;
-	font: 15px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family:Helvetica, Arial, Helvetica, sans-serif;
+	font-size:12px;
 	font-weight: 300;
 	line-height: 1.625;
 }
@@ -689,12 +689,14 @@ a:hover {
 }
 .page-title {
 	color: #666;
-	font-size: 10px;
-	font-weight: 500;
+	font-size: 14px;
+	font-weight:bold;
 	letter-spacing: 0.1em;
 	line-height: 2.6em;
-	margin: 0 0 2.6em;
-	text-transform: uppercase;
+	margin-bottom:40px;
+	padding:15px;
+	
+	background:#fff;
 }
 .page-title a {
 	font-size: 12px;
@@ -704,10 +706,12 @@ a:hover {
 }
 .hentry,
 .no-results {
-	border-bottom: 1px solid #ddd;
-	margin: 0 0 1.625em;
-	padding: 0 0 1.625em;
+	
+	padding:15px;
+	 
 	position: relative;
+	background:#fff;
+	margin-bottom:40px;
 }
 .hentry:last-child,
 .no-results {
@@ -733,7 +737,7 @@ a:hover {
 }
 .entry-title,
 .entry-title a {
-	color: #222;
+	color: #666;
 	text-decoration: none;
 }
 .entry-title a:hover,
@@ -2363,7 +2367,7 @@ p.comment-form-comment {
 @media (max-width: 650px) {
 	/* @media (max-width: 650px) Reduce font-sizes for better readability on smaller devices */
 	body, input, textarea {
-		font-size: 13px;
+		font-size: 12px;
 	}
 	#site-title a {
 		font-size: 24px;
@@ -2534,11 +2538,11 @@ p.comment-form-comment {
 	#primary {
 		float: left;
 		margin: 0;
-		width: 100%;
+		width: 670px;
 	}
 	#content {
 		margin: 0;
-		width: auto;
+		width: 670px;
 	}
 	.singular #content {
 		margin: 0;
@@ -2697,13 +2701,13 @@ p.comment-form-comment {
 #header ul .nav{ width:auto;}
 .clear{clear:both;float:none;}
 
-.location{ padding-left:327px; color:#666666; font-size:12px;}
+.location{ padding-left:327px; color:#666666; font-size:12px; height:30px;}
 
 
 /*---------------siderbar------------------------*/
 .left-sidebar{
 	float:left;
-	width:258px;
+	width:220px;
 	padding-left:15px;
 	padding-right:15px;
 	
@@ -2718,18 +2722,20 @@ p.comment-form-comment {
 
 .social-spacing{ height:20px;}
 .side-spacing{ height:30px; width:220px;  float:left;}
-.widget-block a:link{color:#666666; }
-.widget-block a:visited{color:#666666; }
-.widget-block a:hover{color:#FF0078;}
+.entry-title a:link,.widget-block a:link{color:#666666; }
+.entry-title a:visited,.widget-block a:visited{color:#666666; }
+.entry-title a:hover,.widget-block a:hover{color:#FF0078;}
 
 
 .widget-block #searchform{ font-size:18px; color:#666666; width:190px;}
 .widget-block #searchform #searchsubmit { background:url(images/buttons/blank_search_btn.gif) no-repeat top right; width:37px; height:37px; max-height:37px; max-width:37px; display:block;float:left; box-shadow:none; overflow:hidden; cursor:pointer; outline: medium none;border: 0 none;}
 .widget-block #searchform #s{ float:left; width:145px; }
 
-a.purple:link{color:#FF0078}
-a.purple:visited{color:#FF0078}
-a.purple:hover{color:#666666}
+a:link,a.purple:link{color:#FF0078}
+a:visited,a.purple:visited{color:#FF0078}
+a:hover,a.purple:hover{color:#666666}
+
+
 
 
 
