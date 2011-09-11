@@ -111,7 +111,7 @@ function blank_posted_on() {
 }
 endif;
 
-
+/*------------------------------------------*/
 if ( ! function_exists( 'blank_author' ) ) :
 /**
  * Prints HTML with meta information for the current post-date/time and author.
@@ -119,6 +119,7 @@ if ( ! function_exists( 'blank_author' ) ) :
  *
  * @since Twenty Eleven 1.0
  */
+ 
 function blank_author() {
 	printf( __( 'By <span class="author vcard"><a class="url fn n" href="%5$s" title="%6$s" rel="author">%7$s</a></span>', 'blank' ),
 		esc_url( get_permalink() ),
@@ -131,5 +132,182 @@ function blank_author() {
 	);
 }
 endif;
+
+
+//register all widgets code below:
+/*********************************************/
+/**
+ * Blank search bar Class
+ */
+class mb_blank_search_bar extends WP_Widget {
+    /** 构造函数 */
+    function mb_blank_search_bar() {
+        parent::WP_Widget(false, $name = 'Blank search bar');	
+    }
+
+    /** @see WP_Widget::widget */
+    function widget($args, $instance) {		
+         include(TEMPLATEPATH . '/sidebar-search.php');
+        
+    }
+
+} // class end
+
+add_action('widgets_init', create_function('', 'return register_widget("mb_blank_search_bar");'));
+/***********************************************/
+
+
+/*********************************************/
+/**
+ * Class start
+ */
+class mb_blank_social_bar extends WP_Widget {
+    /** 构造函数 */
+    function mb_blank_social_bar() {
+        parent::WP_Widget(false, $name = 'Blank social bar');	
+    }
+
+    /** @see WP_Widget::widget */
+    function widget($args, $instance) {		
+         include(TEMPLATEPATH . '/sidebar-social.php');
+        
+    }
+
+} // class end
+
+add_action('widgets_init', create_function('', 'return register_widget("mb_blank_social_bar");'));
+/***********************************************/
+
+
+/*********************************************/
+/**
+ * Class start
+ */
+class mb_blank_tags_cloud extends WP_Widget {
+    /** 构造函数 */
+    function mb_blank_tags_cloud() {
+        parent::WP_Widget(false, $name = 'Blank tags cloud');	
+    }
+
+    /** @see WP_Widget::widget */
+    function widget($args, $instance) {		
+         include(TEMPLATEPATH . '/sidebar-tags.php');
+        
+    }
+
+} // class end
+
+add_action('widgets_init', create_function('', 'return register_widget("mb_blank_tags_cloud");'));
+/***********************************************/
+
+/*********************************************/
+/**
+ * Class start
+ */
+class mb_blank_google_title extends WP_Widget {
+    /** 构造函数 */
+    function mb_blank_google_title() {
+        parent::WP_Widget(false, $name = 'Blank google title');	
+    }
+
+    /** @see WP_Widget::widget */
+    function widget($args, $instance) {		
+         include(TEMPLATEPATH . '/sidebar-google-title.php');
+        
+    }
+
+} // class end
+
+add_action('widgets_init', create_function('', 'return register_widget("mb_blank_google_title");'));
+/***********************************************/
+
+/*********************************************/
+/**
+ * Class start
+ */
+class mb_blank_email_bar extends WP_Widget {
+    /** 构造函数 */
+    function mb_blank_email_bar() {
+        parent::WP_Widget(false, $name = 'Blank email bar');	
+    }
+
+    /** @see WP_Widget::widget */
+    function widget($args, $instance) {		
+         include(TEMPLATEPATH . '/sidebar-email.php');
+        
+    }
+
+} // class end
+
+add_action('widgets_init', create_function('', 'return register_widget("mb_blank_email_bar");'));
+/***********************************************/
+
+
+
+/*********************************************/
+/**
+ * Class start
+ */
+class mb_blank_archives_bar extends WP_Widget {
+    /** 构造函数 */
+    function mb_blank_archives_bar() {
+        parent::WP_Widget(false, $name = 'Blank archives bar');	
+    }
+
+    /** @see WP_Widget::widget */
+    function widget($args, $instance) {		
+         include(TEMPLATEPATH . '/sidebar-archives.php');
+        
+    }
+
+} // class end
+
+add_action('widgets_init', create_function('', 'return register_widget("mb_blank_archives_bar");'));
+/***********************************************/
+
+
+/*********************************************/
+/**
+ * Class start
+ */
+class mb_blank_address_bar extends WP_Widget {
+    /** 构造函数 */
+    function mb_blank_address_bar() {
+        parent::WP_Widget(false, $name = 'Blank address bar');	
+    }
+
+    /** @see WP_Widget::widget */
+    function widget($args, $instance) {		
+         include(TEMPLATEPATH . '/sidebar-address.php');
+        
+    }
+
+} // class end
+
+add_action('widgets_init', create_function('', 'return register_widget("mb_blank_address_bar");'));
+/***********************************************/
+
+
+/*********************************************/
+/**
+ * Class start
+ */
+class mb_blank_sidebar_spacing extends WP_Widget {
+    /** 构造函数 */
+    function mb_blank_sidebar_spacing() {
+        parent::WP_Widget(false, $name = 'Blank spacing bar');	
+    }
+
+    /** @see WP_Widget::widget */
+    function widget($args, $instance) {		
+         include(TEMPLATEPATH . '/sidebar-spacing.php');
+        
+    }
+
+} // class end
+
+add_action('widgets_init', create_function('', 'return register_widget("mb_blank_sidebar_spacing");'));
+/***********************************************/
+//register all widgets code end:
 
 ?>

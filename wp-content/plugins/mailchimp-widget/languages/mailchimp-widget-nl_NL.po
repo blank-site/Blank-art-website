@@ -1,0 +1,145 @@
+# Copyright (C) 2010 MailChimp Widget
+# This file is distributed under the same license as the MailChimp Widget package.
+msgid ""
+msgstr ""
+"Project-Id-Version: MailChimp Widget 0.6.2\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/mailchimp-widget\n"
+"POT-Creation-Date: 2011-01-16 19:08:40+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2011-02-16 13:48+0100\n"
+"Last-Translator: Jason Jeffers <info@ordnung.nl>\n"
+"Language-Team: \n"
+
+#: lib/ns_mc_plugin.class.php:72
+msgid "Donate"
+msgstr "Donatie"
+
+#: lib/ns_mc_plugin.class.php:106
+msgid "What you're trying to do looks a little shady."
+msgstr "Wat je probeert, ziet er een beetje vreemd uit."
+
+#: lib/ns_mc_plugin.class.php:124
+msgid "MailChimp Widget Settings"
+msgstr "Mailchimp widget instellingen"
+
+#: lib/ns_mc_plugin.class.php:124
+msgid "Enter a valid MailChimp API key here to get started. Once you've done that, you can use the MailChimp Widget from the Widgets menu. You will need to have at least MailChimp list set up before the using the widget."
+msgstr "Typ een geldige Mailchimp API sleutel in om te beginnen. Daarna kun je een MailChimp Widget van het Widgetmenu gebruiken. Je moet wel een MailChimp lijst hebben gemaakt voordat je de widget gebruikt. "
+
+#: lib/ns_mc_plugin.class.php:124
+msgid "Save Changes"
+msgstr "Veranderingen opslaan"
+
+#: lib/ns_mc_plugin.class.php:134
+msgid "You'll need to set up the MailChimp signup widget plugin options before using it. "
+msgstr "Stel eerst de MailChimp pluginmogelijkheden in voor de inschrijfwidget voordat je deze gebruikt."
+
+#: lib/ns_mc_plugin.class.php:134
+msgid "You can make your changes"
+msgstr "Je kunt veranderingen aanbrengen"
+
+#: lib/ns_mc_plugin.class.php:134
+msgid "here"
+msgstr "hier"
+
+#: lib/ns_widget_mailchimp.class.php:26
+msgid "There was a problem processing your submission."
+msgstr "Er is een probleem met het verwerken van je voorstel."
+
+#: lib/ns_widget_mailchimp.class.php:27
+msgid "Join now!"
+msgstr "Schrijf je nu in!"
+
+#: lib/ns_widget_mailchimp.class.php:28
+msgid "Thank you for joining our mailing list. Please check your email for a confirmation link."
+msgstr "Bedankt voor je inschrijving  op onze verzendlijst. Check je e-mail voor een link ter bevestiging van je inschrijving."
+
+#: lib/ns_widget_mailchimp.class.php:29
+msgid "Sign up for our mailing list."
+msgstr "Schrijf je in op onze verzendlijst."
+
+#: lib/ns_widget_mailchimp.class.php:31
+msgid "Displays a sign-up form for a MailChimp mailing list."
+msgstr "Toont een inschrijfformulier voor een MailChimp verzendlijst."
+
+#: lib/ns_widget_mailchimp.class.php:33
+msgid "MailChimp List Signup"
+msgstr "MailChimp inschrijflijst"
+
+#: lib/ns_widget_mailchimp.class.php:82
+msgid "General Settings"
+msgstr "Algemene instellingen"
+
+#: lib/ns_widget_mailchimp.class.php:82
+msgid "Title :"
+msgstr "Titel :"
+
+#: lib/ns_widget_mailchimp.class.php:84
+msgid "Select a Mailing List :"
+msgstr "Selecteer een verzendlijst :"
+
+#: lib/ns_widget_mailchimp.class.php:96
+msgid "This is the list your users will be signing up for in your sidebar."
+msgstr "Aan de zijkant vind je de lijst waarop je gebruikers zich inschrijven. "
+
+#: lib/ns_widget_mailchimp.class.php:98
+msgid "Sign Up Button Text :"
+msgstr "Inschrijfknop tekst :"
+
+#: lib/ns_widget_mailchimp.class.php:100
+msgid "Personal Information"
+msgstr "Persoonlijke informatie"
+
+#: lib/ns_widget_mailchimp.class.php:100
+msgid "These fields won't (and shouldn't) be required. Should the widget form collect users' first and last names?"
+msgstr "Deze velden zijn niet verplicht. Wil je dat het widgetformulier de voor- en achternamen van de gebruikers ophaalt?"
+
+#: lib/ns_widget_mailchimp.class.php:100
+msgid "Collect first name."
+msgstr "Haal voornaam op"
+
+#: lib/ns_widget_mailchimp.class.php:100
+msgid "Collect last name."
+msgstr "Haal achternaam op"
+
+#: lib/ns_widget_mailchimp.class.php:102
+msgid "Notifications"
+msgstr "Mededelingen"
+
+#: lib/ns_widget_mailchimp.class.php:102
+msgid "Use these fields to customize what your visitors see after they submit the form"
+msgstr "Gebruik deze velden voor aanpassingen aan wat je bezoekers zien als zij het formulier hebben ingevuld. "
+
+#: lib/ns_widget_mailchimp.class.php:102
+msgid "Success :"
+msgstr "Succes :"
+
+#: lib/ns_widget_mailchimp.class.php:102
+msgid "Failure :"
+msgstr "Fout :"
+
+#: lib/ns_widget_mailchimp.class.php:286
+msgid "First Name :"
+msgstr "Voornaam :"
+
+#: lib/ns_widget_mailchimp.class.php:294
+msgid "Last Name :"
+msgstr "Achternaam :"
+
+#: lib/ns_widget_mailchimp.class.php:298
+msgid "Email Address :"
+msgstr "E-mail adres :"
+
+#. #-#-#-#-#  plugin.pot (MailChimp Widget 0.6.2)  #-#-#-#-#
+#. Plugin URI of the plugin/theme
+#. #-#-#-#-#  plugin.pot (MailChimp Widget 0.6.2)  #-#-#-#-#
+#. Author URI of the plugin/theme
+msgid "https://github.com/kalchas"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "James Lafferty"
+msgstr ""
+
