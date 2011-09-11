@@ -2718,7 +2718,7 @@ p.comment-form-comment {
 .widget-block-topline{ height:5px; background:#e6e6e6;}
 .sidebar-social{}
 .widget-title{text-transform:none; height:40px;font-family:Helvetica, Arial, Helvetica, sans-serif;font-size:12px; }
-.widget-wrap{ padding-left:14px; padding-top:5px; float:left;}
+.widget-wrap{ padding-left:14px; padding-top:5px; width:auto;}
 
 .social-spacing{ height:20px;}
 .side-spacing{ height:30px; width:220px;  float:left;}

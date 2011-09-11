@@ -37,15 +37,18 @@
 	margin-top: 6px;
 	line-height:11px;
 }
-#email-subscription-box .field_email {
-	width: 140px;
+ #subsc_email,.field_email {
+	width: 280px;
 	background: none;
-	height: 21px;
-	line-height: 21px;
-	background-color: #fff;
-	border: 1px solid #0d2c52;
-	color: #000;
-	margin-top: 5px;
+	height: 30px;
+	line-height:30px;
+	background-color: #e6e6e6;
+	color: #666;
+
+	box-shadow:none;
+	border:none;padding:0;
+	padding-left:3px;
+	float:left;
 }
 
 #email-subscription-box .field_names {
@@ -54,19 +57,18 @@
 	height: 21px;
 	background-color: #fff;
 	border: 1px solid #0d2c52;
-	color: #000;
+	color: #666;
 	float:left;
 }
-#email-subscription-box .btn_email {
-	width: 39px;
+.btn_email {
+	width: 30px;
 	background: none;
-	height: 23px;
+	height: 30px;
 	border: none;
-	line-height: 20px;
-	background-image: url(btn-email.jpg);
+	
+	background-image:url(../../themes/blank/images/buttons/bttn-newsletter.png);
 	background-repeat: no-repeat;
 	color: #FFF;
-	margin-top: 10px;
-	margin-left: 10px;
-	cursor: pointer;
+
+	cursor: pointer; float:left;
 }

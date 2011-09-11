@@ -10,9 +10,13 @@
 <link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="<?php bloginfo('atom_url'); ?>" />
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 <?php wp_get_archives('type=monthly&format=link'); ?>
+<?php wp_enqueue_script('jquery'); ?>
 <?php wp_head(); ?>
 </head>
 <body>
+<script type="text/javascript">
+var $=jQuery.noConflict(true);
+</script>
 <div id="page">
 <div id="header" >
     <div class="left_block"></div>

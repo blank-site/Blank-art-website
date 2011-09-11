@@ -17,35 +17,23 @@ $bgURL = plugins_url('/images/'.$bgbox, __FILE__);
 </script>
 <!--<script type="application/javascript" src="<?php echo plugins_url('/js/jquery-1.4.4.min.js', __FILE__)?>"></script>-->
 
-
-
-<div  class='sidebar-social widget-block'>
-	<div class="widget-block-topline"></div>
-    <div class="widget-wrap">
-    <div id='newsletter_title' class='widget-title'>Newsletter</div>
-    <div class="social-spacing"></div>
-    
-  
-	   <?php if($show_names):?>
+<div id="email-subscription-box" style="background-image: url(<?php echo $bgURL?>)">
+	<p>Enter Your Email Address</p><p>(We Respect Your Privacy)</p>
+	<p>
+    <?php if($show_names):?>
     	<input type="text" id="fname" class="field_names" onClick="nm_clickclear(this, 'First Name')" onBlur="nm_clickrecall(this,'First Name')" value="First Name" />
         <input type="text" id="lname" class="field_names" onClick="nm_clickclear(this, 'Last Name')" onBlur="nm_clickrecall(this,'Last Name')" value="Last Name" />
     <?php endif?>
         
-       	<input type="text" id="subsc_email" class="field_email" onClick="nm_clickclear(this, 'Enter email')" onBlur="nm_clickrecall(this,'Enter email')" value="Enter email" />
+       	<input type="text" id="subsc_email" class="field_email" onClick="nm_clickclear(this, 'Email')" onBlur="nm_clickrecall(this,'Email')" value="Email" />
         <input type="hidden" value="<?php echo get_option('nm_mc_apikey');?>" id="nm_mailchimp_api_key" />
         <input type="hidden" value="<?php echo $list_id;?>" id="nm_mailchimp_list_id" />
-        <input id='btn_email' type="button" class="btn_email" onClick="postToMailChimp()" />
-     </div>
-</div>
+        <input type="button" class="btn_email" onClick="postToMailChimp()" />
+    </p>
+</div>	
 
 
 <script type="text/javascript">
-//jQuery(document).ready(function($) {
-	
-  $('#subsc_email').css('width',($('#newsletter_title').width()-30-15)+'px');
- // });
- 
-//jQuery.('#subsc_email').css('width',jQuery.('#newsletter_title').width()+'px');
 function postToMailChimp()
 {
 	var e 		= $('#subsc_email').val();
@@ -66,7 +54,7 @@ function postToMailChimp()
 								fname: f,
 								lname: l}, function(data){
 			alert(data);
-			$('#subsc_email').val('Enter email');
+			$('#subsc_email').val('Thanks');
 	});
 }
 

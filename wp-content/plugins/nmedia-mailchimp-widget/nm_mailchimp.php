@@ -19,7 +19,7 @@ class nmMailChimp extends WP_Widget {
 	* constructor
 	*/	 
 	function nmMailChimp() {
-		parent::WP_Widget('nmedia_mail_chimp', 'MailChimp Widget', array('description' => 'MailChimp Widget by najeebmedia.com.'));	
+		parent::WP_Widget('nmedia_mail_chimp', 'MailChimp Widget', array('description' => 'MailChimp Widget by najeebmedia.com.Has be modified by LIUYI. Do not update it'));	
 		
 	}
 	
@@ -46,7 +46,7 @@ class nmMailChimp extends WP_Widget {
 		extract($args, EXTR_SKIP);
 		echo $before_widget;
 		$title = empty($instance['nm_mc_title']) ? '&nbsp;' : apply_filters('widget_title', $instance['nm_mc_title']);
-		if ( !empty( $title ) ) { echo $before_title . $title . $after_title; };
+		//if ( !empty( $title ) ) { echo $before_title . $title . $after_title; };
 		
 		nmMailChimp::nm_load_form($instance['nm_mc_list_id'], $instance['nm_mc_show_names'], $instance['nm_mc_bg']);
 		
