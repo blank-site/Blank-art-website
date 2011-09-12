@@ -153,7 +153,7 @@ class MPTweetList extends WP_Widget {
 		//Gather tweets data
 		if ($user1 != '') {
 			$user1_url = "http://api.twitter.com/1/statuses/user_timeline.xml?screen_name=".$user1;
-			$user1_data = file_get_contents($user1_url);
+			$user1_data = @file_get_contents($user1_url);
 			$tweet_pattern = "/<text>(.+)<\/text>/";
 			$tweet_time_pattern="/<created_at>(.+)<\/created_at>/";
 			$tweet_time='';

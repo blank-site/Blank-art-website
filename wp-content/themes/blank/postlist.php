@@ -18,17 +18,15 @@
 
 get_header(); ?>
 <?php get_template_part('top','location')?>
- 
- 
+
 <?php get_sidebar(); ?>
- 
 
 <div id="primary" class="showcase">
 <?php if (have_posts()) : ?>
 	<?php while (have_posts()) : the_post(); ?>
 	<?php require('content.php'); ?>
 <?php endwhile;endif ;?>
-    
+
 </div><!-- #primary -->
 <div class='clear'></div>
 <?php get_footer(); ?>
