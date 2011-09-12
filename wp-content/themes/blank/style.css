@@ -2735,6 +2735,13 @@ a:link,a.purple:link{color:#FF0078}
 a:visited,a.purple:visited{color:#FF0078}
 a:hover,a.purple:hover{color:#666666}
 
+.user_tweets .widget-title{line-height:12px; height:23px; font-weight:normal;}
+.user_tweets a:link{color:#FF0078;font-weight:normal;font-size:12px;}
+.user_tweets a:visited{color:#FF0078}
+.user_tweets a:hover{color:#666666}
+.user_tweets{ margin-bottom:30px; position:relative; height:105px; overflow:hidden; }
+.user_tweets .widget-wrap{padding-right:15px; height:85px;overflow:hidden; line-height:16px;}
+.tweet_time{ position:absolute;bottom:10px;}
 
 
 

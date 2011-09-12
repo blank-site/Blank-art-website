@@ -1,10 +1,10 @@
 <?php
 /*
-Plugin Name: Blank MP Tweet List
-Plugin URI: 
+Plugin Name: MP Tweet List
+Plugin URI: http://MikesPickzWS.com/wordpress-plugins/mp-tweet-list
 Description: The MP Tweet List allows you to easily display your most recent tweets, with support for multiple Twitter accounts - with no Javascript or Flash needed. This plugin will add a widget that can be used in any widgetized area in your theme. It is fully  customizable, allowing you to choose the widget title, how many tweets to display and which user's tweets to display. It also allows you to choose whether or not to convert @mentions, #hashtags and links independent of eachother. This plugin supports up to two Twitter users at the same time.
 Version: 1.0
-Author: MikesPickz Web Solutions, Inc. Modified by ourbrander team
+Author: MikesPickz Web Solutions, Inc.
 Author URI: http://MikesPickzWS.com
 License: GPL2
 */
@@ -42,7 +42,7 @@ add_filter('plugin_action_links', 'mp_tweet_center_add_widget_link', 10, 2);
 class MPTweetList extends WP_Widget {
 	//Construct the Widget
     function MPTweetList() {
-        parent::WP_Widget(false, $name = 'Blank Tweet List');
+        parent::WP_Widget(false, $name = 'MP Tweet List');
     }
 	
 	//Widget Options Form
@@ -163,21 +163,12 @@ class MPTweetList extends WP_Widget {
 			$postTime='';
 			
 			//$user1_tweets = '<strong><a href="http://twitter.com/'.$user1.'" target="_blank">- '.$user1.'</a></strong>';
-			//$user1_tweets .= '<ul class="user_tweets">';
+			$user1_tweets .= '<ul class="user1_tweets">';
 			
-			/*----------------------------------*/
-			
-			/*-----------------------------------*/
 			while ($m < $max) {
-				$user1_tweets.='';
-				$user1_tweets.='<div class="sidebar-social widget-block user_tweets">
-								<div class="widget-block-topline"></div>
-								<div class="widget-wrap">
-   								<div class="widget-title" style="">Tweet</div>';
-								
-				$user1_tweets .= '<a href="http://twitter.com/'.$user1.'" target="_blank">- '.$user1.':</a>';
+				$user1_tweets .= '<strong><a href="http://twitter.com/'.$user1.'" target="_blank">- '.$user1.'</a></strong>';
 				if ($convert_links == 'yes') {
-				$user1_full_tweet = preg_replace("/(https?:\/\/\w+\.\w+\/\w+)/","<a href='$1' target='_blank'>$1</a> ",strip_tags($user1_recent[0][$m]));
+				$user1_full_tweet = preg_replace("/(https?:\/\/\w+\.\w+\/\w+)/","<a href='$1' target='_blank'>$1</a> ",$user1_recent[0][$m]);
 				}
 				if ($convert_users == 'yes') {
 				if ($convert_links == 'no') { $user1_full_tweet = $user1_recent[0][$m]; }
@@ -188,71 +179,20 @@ class MPTweetList extends WP_Widget {
 				$user1_full_tweet = preg_replace("/#(\w+)/","<a href='http://search.twitter.com/search?q=%23$1' target='_blank'>#$1</a> ",$user1_full_tweet);
 				}
 				if ($convert_links != 'yes' && $convert_users != 'yes' && $convert_hashs != 'yes') {
-					$user1_tweets .= '  '.strip_tags($user1_recent[0][$m]);
+					$user1_tweets .= '<li>'.$user1_recent[0][$m].'</li>';
 				} else {
-				$user1_tweets .= '<div class="">'.strip_tags($user1_full_tweet).'</div>';
+				$user1_tweets .= '<li>'.$user1_full_tweet.'</li>';
 				}
 				
 				
 				$postTime=strip_tags($tweet_time[0][$m*2]);
-				$user1_tweets .='<div class="tweet_time">'.time_ago($postTime).'</div>';
-				$user1_tweets.='</div></div>';
+				$user1_tweets .='<li class="tweet_time">'.time_ago($postTime).'</li>';
+				
 				$m++;
 			}
-			//$user1_tweets .= '</ul>';
+			$user1_tweets .= '</ul>';
 		}
 		if ($user2 != '') {
-			$user2_url = "http://api.twitter.com/1/statuses/user_timeline.xml?screen_name=".$user2;
-			$user2_data = file_get_contents($user2_url);
-			$tweet_pattern = "/<text>(.+)<\/text>/";
-			$tweet_time_pattern="/<created_at>(.+)<\/created_at>/";
-			$tweet_time='';
-			preg_match_all ($tweet_pattern, $user2_data, $user2_recent);
-			preg_match_all ($tweet_time_pattern, $user2_data, $tweet_time);
-			$user2_tweets='';
-			$postTime='';
-			
-			//$user2_tweets = '<strong><a href="http://twitter.com/'.$user2.'" target="_blank">- '.$user2.'</a></strong>';
-			//$user2_tweets .= '<ul class="user_tweets">';
-			
-			/*----------------------------------*/
-			
-			/*-----------------------------------*/
-			while ($p < $max) {
-				$user2_tweets.='';
-				$user2_tweets.='<div class="sidebar-social widget-block user_tweets">
-								<div class="widget-block-topline"></div>
-								<div class="widget-wrap">
-   								<div class="widget-title" style="">Tweet</div>';
-								
-				$user2_tweets .= '<a href="http://twitter.com/'.$user2.'" target="_blank">- '.$user2.':</a>';
-				if ($convert_links == 'yes') {
-				$user2_full_tweet = preg_replace("/(https?:\/\/\w+\.\w+\/\w+)/","<a href='$1' target='_blank'>$1</a> ",strip_tags($user2_recent[0][$p]));
-				}
-				if ($convert_users == 'yes') {
-				if ($convert_links == 'no') { $user2_full_tweet = $user2_recent[0][$p]; }
-				$user2_full_tweet = preg_replace("/@(\w+)/","<a href='http://twitter.com/$1' target='_blank'>@$1</a> ",$user2_full_tweet);
-				}
-				if ($convert_hashs == 'yes') {
-				if ($convert_links == 'no') { $user2_full_tweet = $user2_recent[0][$p]; }
-				$user2_full_tweet = preg_replace("/#(\w+)/","<a href='http://search.twitter.com/search?q=%23$1' target='_blank'>#$1</a> ",$user2_full_tweet);
-				}
-				if ($convert_links != 'yes' && $convert_users != 'yes' && $convert_hashs != 'yes') {
-					$user2_tweets .= '  '.strip_tags($user2_recent[0][$p]);
-				} else {
-				$user2_tweets .= '<div class="">'.$user2_full_tweet.'</div>';
-				}
-				
-				
-				$postTime=strip_tags($tweet_time[0][$p*2]);
-				$user2_tweets .='<li class="tweet_time">'.time_ago($postTime).'</li>';
-				$user2_tweets.='</div></div>';
-				$p++;
-			}
-			 
-		}
-		
-		/*if ($user2 != '') {
 			$user2_url = "http://api.twitter.com/1/statuses/user_timeline.xml?screen_name=".$user2;
 			$user2_data = file_get_contents($user2_url);
 			$tweet_pattern = "/<text>(.+)<\/text>/";
@@ -263,7 +203,7 @@ class MPTweetList extends WP_Widget {
 			preg_match_all ($tweet_time_pattern, $user2_data, $tweet_time);
 			
 			$user2_tweets = '<br /><strong><a href="http://twitter.com/'.$user2.'" target="_blank">@'.$user2.'</a></strong>';
-			$user2_tweets .= '<ul class="user_tweets">';
+			$user2_tweets .= '<ul class="user2_tweets">';
 			
 			while ($p < $max) {
 				if ($convert_links == 'yes') {
@@ -288,7 +228,7 @@ class MPTweetList extends WP_Widget {
 				$p++;
 			}
 			$user2_tweets .= '</ul>';
-		}*/
+		}
 		//Results
 		echo $before_widget;
 		if ($title) { echo $before_title.$title.$after_title; }
@@ -300,7 +240,7 @@ class MPTweetList extends WP_Widget {
 } // class MPTweetList
 
 
-function time_ago($date,$granularity=1) {
+function time_ago($date,$granularity=2) {
     $date = strtotime($date);
     $difference = time() - $date;
     $periods = array('decade' => 315360000,
@@ -322,7 +262,7 @@ function time_ago($date,$granularity=1) {
         }
         if ($granularity == '0') { break; }
     }
-    return $retval.' ago';      
+    return ' posted '.$retval.' ago';      
 }
 
 //Add the Widget to Widget Menu
