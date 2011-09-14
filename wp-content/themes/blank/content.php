@@ -23,7 +23,7 @@
 
 			<?php if ( comments_open() && ! post_password_required() ) : ?>
 			<div class="comments-link">
-				<?php comments_popup_link( '<span class="leave-reply">' . __( 'Reply', 'blank' ) . '</span>', _x( '1', 'comments number', 'blank' ), _x( '%', 'comments number', 'blank' ) ); ?>
+				<?php // comments_popup_link( '<span class="leave-reply">' . __( 'Reply', 'blank' ) . '</span>', _x( '1', 'comments number', 'blank' ), _x( '%', 'comments number', 'blank' ) ); ?>
 			</div>
 			<?php endif; ?>
 		</header><!-- .entry-header -->
@@ -86,3 +86,17 @@
 			<?php edit_post_link( __( 'Edit', 'blank' ), '<span class="edit-link">', '</span>' ); ?>
 		</footer><!-- #entry-meta -->
 	</article><!-- #post-<?php the_ID(); ?> -->
+
+
+
+<p>[wpgmappity id="1"]</p>
+<?php
+
+if(function_exists('pronamic_google_maps')) {
+    pronamic_google_maps(array(
+        'width' => 500 ,
+        'height' => 500
+    ));
+}
+
+?>

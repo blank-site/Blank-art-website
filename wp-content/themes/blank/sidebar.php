@@ -1,3 +1,5 @@
 <div class="left-sidebar">
-<?php dynamic_sidebar('Homepage'); ?>
+<?php //get_sidebar('newpost') ?>
+<?php dynamic_sidebar('Homepage')?>
 </div>
+	

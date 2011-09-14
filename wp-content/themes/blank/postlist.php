@@ -18,15 +18,19 @@
 
 get_header(); ?>
 <?php get_template_part('top','location')?>
-
+ 
+ 
 <?php get_sidebar(); ?>
+ 
 
 <div id="primary" class="showcase">
-<?php if (have_posts()) : ?>
-	<?php while (have_posts()) : the_post(); ?>
-	<?php require('content.php'); ?>
-<?php endwhile;endif ;?>
-
+<?php get_template_part( 'loop', 'page' );?>
+    <?php if(function_exists('pronamic_google_maps')) {
+    pronamic_google_maps(array(
+        'width' => 500 ,
+        'height' => 500
+    ));
+}?>
 </div><!-- #primary -->
 <div class='clear'></div>
 <?php get_footer(); ?>

@@ -2744,5 +2744,9 @@ a:hover,a.purple:hover{color:#666666}
 .tweet_time{ position:absolute;bottom:10px;}
 
 
+/*footer*/
+#footer{ background:#f3f3f3; text-align:right; width:960px; max-width:960px; margin:auto; height:auto;}
+#site-info{width:auto;padding-right:15px; padding-left:15px; padding-top:5px; padding-bottom:5px; }
+
 
 
